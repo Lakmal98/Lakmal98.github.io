@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Lakmal98/Lakmal98.github.io/static/css/main.a617e044.chunk.css",
+    "main.js": "/Lakmal98/Lakmal98.github.io/static/js/main.e19e7040.chunk.js",
+    "main.js.map": "/Lakmal98/Lakmal98.github.io/static/js/main.e19e7040.chunk.js.map",
+    "runtime-main.js": "/Lakmal98/Lakmal98.github.io/static/js/runtime-main.99bcf780.js",
+    "runtime-main.js.map": "/Lakmal98/Lakmal98.github.io/static/js/runtime-main.99bcf780.js.map",
+    "static/js/2.66af454a.chunk.js": "/Lakmal98/Lakmal98.github.io/static/js/2.66af454a.chunk.js",
+    "static/js/2.66af454a.chunk.js.map": "/Lakmal98/Lakmal98.github.io/static/js/2.66af454a.chunk.js.map",
+    "static/js/3.b0e8af3b.chunk.js": "/Lakmal98/Lakmal98.github.io/static/js/3.b0e8af3b.chunk.js",
+    "static/js/3.b0e8af3b.chunk.js.map": "/Lakmal98/Lakmal98.github.io/static/js/3.b0e8af3b.chunk.js.map",
+    "index.html": "/Lakmal98/Lakmal98.github.io/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/Lakmal98/Lakmal98.github.io/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.66af454a.chunk.js.LICENSE.txt": "/Lakmal98/Lakmal98.github.io/static/js/2.66af454a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.99bcf780.js",
+    "static/js/2.66af454a.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.e19e7040.chunk.js"
+  ]
+}
