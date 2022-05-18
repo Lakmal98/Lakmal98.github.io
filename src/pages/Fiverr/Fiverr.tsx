@@ -1,10 +1,11 @@
 import React from "react";
+import Form from "./Form";
 
 const Fiverr = (): JSX.Element => {
   return (
     <>
-      <div className="App">
-        <header className="App-header">Fiverr is great</header>
+      <div className="App App-header">
+        <Form />
       </div>
     </>
   );

@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
 import { HashRouter, Route, Routes } from "react-router-dom";
-import Fiverr from "./pages/Fiverr";
 import Home from "./pages/Home";
+import Fiverr from "./pages/Fiverr/Fiverr";
 
 function App() {
   return (
