@@ -1,0 +1,2 @@
+(this.webpackJsonpLakmal=this.webpackJsonpLakmal||[]).push([[3],{95:function(a,t,e){"use strict";e.r(t),t.default=e.p+"static/media/best-app-development-tool.ad3bbdcb.md"}}]);
+//# sourceMappingURL=3.d5aebfe4.chunk.js.map

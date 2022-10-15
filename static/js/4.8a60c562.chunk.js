@@ -1,0 +1,2 @@
+(this.webpackJsonpLakmal=this.webpackJsonpLakmal||[]).push([[4],{96:function(a,t,c){"use strict";c.r(t),t.default=c.p+"static/media/common-misconceptions-about-payment.e5b2c5dc.md"}}]);
+//# sourceMappingURL=4.8a60c562.chunk.js.map
