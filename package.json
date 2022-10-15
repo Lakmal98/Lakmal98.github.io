@@ -2,7 +2,7 @@
   "name": "Lakmal",
   "version": "1.0.2",
   "private": true,
-  "homepage": "https://lakmal98.github.io/portfolio",
+  "homepage": "https://lakmal98.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -21,7 +21,7 @@
     "react-markdown": "^6.0.2",
     "react-on-screen": "^2.1.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.2",
     "react-slick": "^0.28.1",
     "react-typed": "^1.2.0",
