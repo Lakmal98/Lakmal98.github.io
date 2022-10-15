@@ -1,2 +1,0 @@
-(this.webpackJsonpLakmal=this.webpackJsonpLakmal||[]).push([[5],{97:function(s,t,a){"use strict";a.r(t),t.default=a.p+"static/media/things-to-know-about-startup-business.3df71b0b.md"}}]);
-//# sourceMappingURL=5.39857515.chunk.js.map
