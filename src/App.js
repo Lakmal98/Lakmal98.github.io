@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import HomepageLight from "./pages/HomepageLight";
 import HomepageDark from "./pages/HomepageDark";
@@ -15,7 +15,7 @@ import "./App.scss";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Switch>
         <Route path="/" exact>
           <Homepage />
@@ -47,7 +47,7 @@ function App() {
         <Route path="/blogs" component={Bloglist} exact />
         <Route path="/blogs/blog-details/:id/:title" component={BlogDetails} />
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

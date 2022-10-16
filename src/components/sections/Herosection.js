@@ -1,7 +1,7 @@
 import React from "react";
 import Typed from "react-typed";
 import { Link } from "react-scroll";
-import { avatar, name, roles } from "../../content/content";
+import { avatar, name, roles, socialMedia } from "../../content/content";
 
 function Herosection(props) {
   const { x, y } = props.position;
@@ -43,28 +43,18 @@ function Herosection(props) {
 
           <ul className="social-icons light list-inline mb-0 mt-4">
             <li className="list-inline-item">
-              <a href="!#">
-                <i className="fab fa-instagram"></i>
+              <a href={socialMedia?.linkedin} target="_blank" rel="noreferrer">
+                <i className="fab fa-linkedin"></i>
               </a>
             </li>
             <li className="list-inline-item">
-              <a href="!#">
-                <i className="fab fa-twitter"></i>
+              <a href={socialMedia?.github} target="_blank" rel="noreferrer">
+                <i className="fab fa-github"></i>
               </a>
             </li>
             <li className="list-inline-item">
-              <a href="!#">
-                <i className="fab fa-behance"></i>
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a href="!#">
-                <i className="fab fa-dribbble"></i>
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a href="!#">
-                <i className="fab fa-pinterest-p"></i>
+              <a href={socialMedia?.whatsapp} target="_blank" rel="noreferrer">
+                <i className="fab fa-whatsapp"></i>
               </a>
             </li>
           </ul>

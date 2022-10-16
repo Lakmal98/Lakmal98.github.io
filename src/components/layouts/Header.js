@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { name } from "../../content/content";
 import Logo from "../elements/Logo";
 
 function Header({ light, logoSource, toggleMenu, headerToggler }) {
@@ -27,7 +28,10 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
   };
   return (
     <>
-      <header className={handleMobileClasses()}>
+      <header className={handleMobileClasses()} 
+      // sticky="top"
+      style={{position: "fixed", top: 0, left: 0, right: 0, zIndex: 999}}
+      >
         <div className="container">
           <div className="menu-icon d-inline-flex mr-4">
             <button onClick={headerToggler}>
@@ -47,7 +51,7 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
                 to="section-home"
                 spy={true}
                 smooth={true}
-                duration={500}
+                duration={0}
               >
                 <i className="icon-home"></i>Home
               </Link>
@@ -58,7 +62,7 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
                 to="section-about"
                 spy={true}
                 smooth={true}
-                duration={500}
+                duration={0}
               >
                 <i className="icon-user-following"></i>About
               </Link>
@@ -69,7 +73,7 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
                 to="section-services"
                 spy={true}
                 smooth={true}
-                duration={500}
+                duration={0}
               >
                 <i className="icon-briefcase"></i>Services
               </Link>
@@ -80,7 +84,7 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
                 to="section-experiences"
                 spy={true}
                 smooth={true}
-                duration={500}
+                duration={0}
               >
                 <i className="icon-graduation"></i>Experience
               </Link>
@@ -91,7 +95,7 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
                 to="section-works"
                 spy={true}
                 smooth={true}
-                duration={500}
+                duration={0}
               >
                 <i className="icon-layers"></i>Works
               </Link>
@@ -102,7 +106,7 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
                 to="section-blogs"
                 spy={true}
                 smooth={true}
-                duration={500}
+                duration={0}
               >
                 <i className="icon-note"></i>Blog
               </Link>
@@ -113,7 +117,7 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
                 to="section-contact"
                 spy={true}
                 smooth={true}
-                duration={500}
+                duration={0}
               >
                 <i className="icon-bubbles"></i>Contact
               </Link>
@@ -123,7 +127,7 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
 
         <div className="footer">
           <span className="copyright">
-            &copy; {new Date().getFullYear()} Lakmal Template.
+            {name} | {new Date().getFullYear()}
           </span>
         </div>
       </header>

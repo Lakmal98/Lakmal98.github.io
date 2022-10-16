@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { name } from "../../content/content";
 import Logo from "../elements/Logo";
 
 function Header2({ light, logoSource, toggleMenu, headerToggler }) {
@@ -123,7 +124,7 @@ function Header2({ light, logoSource, toggleMenu, headerToggler }) {
 
         <div className="footer">
           <span className="copyright">
-            &copy; {new Date().getFullYear()} Lakmal Template.
+            {name} | {new Date().getFullYear()}
           </span>
         </div>
       </header>

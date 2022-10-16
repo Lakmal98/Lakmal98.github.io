@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Markdown from "markdown-to-jsx";
 import Disqus from "disqus-react";
 import Header from "../components/layouts/Header";
+import { logo } from "../content/content";
 
 function BlogDetails(props) {
   const [content, setContent] = useState("");
@@ -44,7 +45,7 @@ function BlogDetails(props) {
   return (
     <>
       <Header
-        logoSource="/images/logo.svg"
+        logoSource={logo}
         toggleMenu={toggleMenu}
         headerToggler={headerToggler}
       />

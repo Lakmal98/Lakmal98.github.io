@@ -1,62 +1,38 @@
 import React from "react";
 import TrackVisibility from "react-on-screen";
+import { avatar, cv, description, name } from "../../content/content";
 import Counter from "../elements/Counter";
 import Pagetitle from "../elements/Pagetitle";
 import Skill from "../elements/Skill";
 
 const aboutContent = {
-  name: "Lakmal",
-  avatarImage: "/images/avatar-2.svg",
-  content:
-    "I am Lakmal Doe, web developer from London, United Kingdom. I have rich experience in web site design and building and customization, also I am good at WordPress.",
+  name: name,
+  avatarImage: avatar,
+  content: description
 };
 
 const progressData = [
   {
     id: 1,
     title: "Development",
-    percantage: 85,
-    progressColor: "#FFD15C",
+    percantage: 80,
+    progressColor: "#f7b924",
   },
   {
     id: 2,
-    title: "UI/UX Design",
-    percantage: 95,
+    title: "DevOps",
+    percantage: 75,
     progressColor: "#FF4C60",
-  },
-  {
-    id: 3,
-    title: "Photography",
-    percantage: 70,
-    progressColor: "#6C6CE5",
-  },
+  }
 ];
 
 const counterData = [
-  {
-    id: 1,
-    title: "Projects completed",
-    count: 198,
-    icon: "icon-fire",
-  },
-  {
-    id: 2,
-    title: "Cup of coffee",
-    count: 5670,
-    icon: "icon-cup",
-  },
-  {
-    id: 3,
-    title: "Satisfied clients",
-    count: 427,
-    icon: "icon-people",
-  },
-  {
-    id: 4,
-    title: "Nominees winner",
-    count: 35,
-    icon: "icon-badge",
-  },
+  // {
+  //   id: 1,
+  //   title: "Projects completed",
+  //   count: 20,
+  //   icon: "icon-fire",
+  // }
 ];
 
 function About() {
@@ -67,7 +43,8 @@ function About() {
         <div className="row">
           <div className="col-md-3">
             <div className="text-center text-md-left">
-              <img src={aboutContent.avatarImage} alt={aboutContent.name} />
+              <img src={aboutContent.avatarImage} alt={aboutContent.name} 
+              style={{borderRadius:"50%"}}/>
             </div>
             <div className="spacer d-md-none d-lg-none" data-height="30"></div>
           </div>
@@ -78,8 +55,8 @@ function About() {
                 <div className="col-md-6">
                   <p>{aboutContent.content}</p>
                   <div className="mt-3">
-                    <a href="!#" className="btn btn-default">
-                      Download CV
+                    <a href={cv} className="btn btn-default" target="_blank" rel="noreferrer">
+                      View/Download CV
                     </a>
                   </div>
                   <div

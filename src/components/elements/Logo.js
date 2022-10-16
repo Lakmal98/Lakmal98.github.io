@@ -5,7 +5,12 @@ function Logo({ logoSource, bootstrapNav }) {
   if (bootstrapNav) {
     return (
       <Link className="navbar-brand" to="/">
-        <img src={logoSource} alt="Lakmal" />
+        <img src={logoSource} alt="Lakmal" style={
+          {
+            borderRadius: "50%",
+            maxWidth: "100px"
+          }
+        }/>
       </Link>
     );
   }
@@ -13,7 +18,12 @@ function Logo({ logoSource, bootstrapNav }) {
   return (
     <div className="site-logo">
       <Link to="/">
-        <img src={logoSource} alt="Lakmal" />
+        <img src={logoSource} alt="Lakmal" style={
+          {
+            borderRadius: "50%",
+            maxWidth: "100px"
+          }
+        } />
       </Link>
     </div>
   );

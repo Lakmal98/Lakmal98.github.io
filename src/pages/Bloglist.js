@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "../components/layouts/Header";
 import Blog from "../components/elements/Blog";
 import Pagination from "../components/elements/Pagination";
+import { logo } from "../content/content";
 
 const allBlogs = [
   {
@@ -133,7 +134,7 @@ function Bloglist() {
   return (
     <>
       <Header
-        logoSource="/images/logo.svg"
+        logoSource={logo}
         toggleMenu={toggleMenu}
         headerToggler={headerToggler}
       />

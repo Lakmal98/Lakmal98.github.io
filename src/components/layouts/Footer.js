@@ -1,11 +1,12 @@
 import React from "react";
+import { name } from "../../content/content";
 
 function Footer({ light }) {
   return (
     <footer className={light ? "footer light" : "footer"}>
       <div className="container">
         <span className="copyright">
-          &copy; {new Date().getFullYear()} Lakmal Template.
+          {name} | {new Date().getFullYear()}
         </span>
       </div>
     </footer>

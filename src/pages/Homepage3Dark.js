@@ -13,12 +13,13 @@ import Pricing from "../components/sections/Pricing";
 import Services from "../components/sections/Services";
 import Testimonials from "../components/sections/Testimonials";
 import Works from "../components/sections/Works";
+import { logo } from "../content/content";
 
 function Homepage3() {
   document.body.classList.add("dark");
   return (
     <>
-      <Header3 logoSource="/images/logo.svg" />
+      <Header3 logoSource={logo} />
       <main className="content-3">
         <Element name="section-home">
           <ReactCursorPosition>

@@ -12,6 +12,7 @@ import Pricing from "../components/sections/Pricing";
 import Services from "../components/sections/Services";
 import Testimonials from "../components/sections/Testimonials";
 import Works from "../components/sections/Works";
+import { logo } from "../content/content";
 
 function Homepage() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -30,7 +31,7 @@ function Homepage() {
   return (
     <>
       <Header
-        logoSource="/images/logo.svg"
+        logoSource={logo}
         toggleMenu={toggleMenu}
         headerToggler={headerToggler}
       />
