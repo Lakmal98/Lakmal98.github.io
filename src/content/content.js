@@ -8,5 +8,5 @@ export const cv = "https://drive.google.com/drive/folders/1-5BNqfs7ODnq1XOU28jtl
 export const socialMedia = {
     linkedin : "https://www.linkedin.com/in/lakmal98",
     github : "https://github.com/Lakmal98",
-    whatsapp : "https://wa.me/947775277373"
+    whatsapp : "https://wa.me/94775277373"
 }
