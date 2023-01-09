@@ -1,26 +1,16 @@
 import React from "react";
-import CountUp from "react-countup";
 
-function Counter({ counterItem, isVisible }) {
-  const { title, count, icon } = counterItem;
-  const winWidth = window.innerWidth;
-  const countQuery = () => {
-    if (winWidth && winWidth > 767) {
-      return <CountUp end={isVisible ? count : 0} />;
-    }
-    return <CountUp end={count} />;
-  };
-  const handleIcon = () => {
-    return "icon " + icon;
-  };
+function Counter({ counterItem }) {
+  const { title, icon } = counterItem;
+
   return (
     <div className="fact-item">
-      <span className={handleIcon()}></span>
-      <div className="details">
-        <h3 className="mb-0 mt-0 number">
-          <em className="count">{countQuery()}</em>
-        </h3>
-        <p className="mb-0">{title}</p>
+      <div
+      style={{ display: "flex", justifyContent: "center", alignItems: "center" ,flexDirection:"column"}}
+      >
+      <img src={icon} alt={title}
+        style={{ width: "50px", height: "50px", borderRadius: "50%"}} />
+      <p className="mb-0" style={{fontSize:"1.5rem"}}>{title}</p>
       </div>
     </div>
   );

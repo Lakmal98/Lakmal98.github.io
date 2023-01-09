@@ -4,9 +4,10 @@ import { Element } from "react-scroll";
 import Header2 from "../components/layouts/Header2";
 import About from "../components/sections/About";
 import Blogs from "../components/sections/Blogs";
-import Brandlogos from "../components/sections/Brandlogos";
+// import Brandlogos from "../components/sections/Brandlogos";
 import Contact from "../components/sections/Contact";
 import Experiences from "../components/sections/Experiences";
+import Educations from "../components/sections/Educations";
 import Herosection from "../components/sections/Herosection";
 import Pricing from "../components/sections/Pricing";
 import Services from "../components/sections/Services";
@@ -51,6 +52,9 @@ function Homepage2Light() {
         <Element name="section-experiences">
           <Experiences />
         </Element>
+<Element name="section-educations">
+          <Educations />
+        </Element>
         <Element name="section-works">
           <Works />
         </Element>
@@ -61,7 +65,7 @@ function Homepage2Light() {
           <Testimonials />
         </Element>
         <Element name="section-brandlogos">
-          <Brandlogos />
+          {/* <Brandlogos /> */}
         </Element>
         <Element name="section-blogs">
           <Blogs />

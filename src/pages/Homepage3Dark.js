@@ -5,9 +5,10 @@ import Header3 from "../components/layouts/Header3";
 import Footer from "../components/layouts/Footer";
 import About from "../components/sections/About";
 import Blogs from "../components/sections/Blogs";
-import BrandlogosDark from "../components/sections/BrandlogosDark";
+// import BrandlogosDark from "../components/sections/BrandlogosDark";
 import Contact from "../components/sections/Contact";
 import Experiences from "../components/sections/Experiences";
+import Educations from "../components/sections/Educations";
 import Herosection from "../components/sections/Herosection";
 import Pricing from "../components/sections/Pricing";
 import Services from "../components/sections/Services";
@@ -35,6 +36,9 @@ function Homepage3() {
         <Element name="section-experiences">
           <Experiences />
         </Element>
+<Element name="section-educations">
+          <Educations />
+        </Element>
         <Element name="section-works">
           <Works />
         </Element>
@@ -45,7 +49,7 @@ function Homepage3() {
           <Testimonials />
         </Element>
         <Element name="section-brandlogos">
-          <BrandlogosDark />
+          {/* <BrandlogosDark /> */}
         </Element>
         <Element name="section-blogs">
           <Blogs />

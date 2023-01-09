@@ -83,6 +83,17 @@ function Header2({ light, logoSource, toggleMenu, headerToggler }) {
                 smooth={true}
                 duration={500}
               >
+                <i className="icon-screen-desktop"></i>
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="section-educations"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
                 <i className="icon-graduation"></i>
               </Link>
             </li>

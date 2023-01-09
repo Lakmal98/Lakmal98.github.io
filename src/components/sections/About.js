@@ -1,6 +1,6 @@
 import React from "react";
 import TrackVisibility from "react-on-screen";
-import { avatar, cv, description, name } from "../../content/content";
+import { avatar, cv, description, name,progressData,counterData } from "../../content/content";
 import Counter from "../elements/Counter";
 import Pagetitle from "../elements/Pagetitle";
 import Skill from "../elements/Skill";
@@ -11,29 +11,6 @@ const aboutContent = {
   content: description
 };
 
-const progressData = [
-  {
-    id: 1,
-    title: "Development",
-    percantage: 80,
-    progressColor: "#f7b924",
-  },
-  {
-    id: 2,
-    title: "DevOps",
-    percantage: 75,
-    progressColor: "#FF4C60",
-  }
-];
-
-const counterData = [
-  // {
-  //   id: 1,
-  //   title: "Projects completed",
-  //   count: 20,
-  //   icon: "icon-fire",
-  // }
-];
 
 function About() {
   return (
@@ -80,6 +57,7 @@ function About() {
           </div>
         </div>
         <div className="spacer" data-height="70"></div>
+        <Pagetitle title="Tools & Technologies that I've worked with" />
         <div className="row fix-spacing">
           {counterData.map((counter) => (
             <div key={counter.id} className="col-md-3 col-sm-6">

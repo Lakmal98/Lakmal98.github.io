@@ -100,6 +100,18 @@ function Header3({ light, logoSource, bootstrapNav }) {
                 <Link
                   activeClass="active"
                   className="nav-link"
+                  to="section-educations"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  Education
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  className="nav-link"
                   to="section-works"
                   spy={true}
                   smooth={true}
