@@ -1,37 +1,8 @@
 import React from "react";
-import { Link } from "react-scroll";
 import Pagetitle from "../elements/Pagetitle";
 import Service from "../elements/Service";
+import { servicesData } from "../../content/content";
 
-const servicesData = [
-  {
-    id: 1,
-    icon: "images/service-1.svg",
-    title: "UI/UX design",
-    content:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
-    color: "#6C6CE5",
-    contentColor: "light",
-  },
-  {
-    id: 2,
-    icon: "images/service-2.svg",
-    title: "Web Development",
-    content:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
-    color: "#F9D74C",
-    contentColor: "dark",
-  },
-  {
-    id: 3,
-    icon: "images/service-3.svg",
-    title: "Photography",
-    content:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
-    color: "#F97B8B",
-    contentColor: "light",
-  },
-];
 
 function Services() {
   return (
@@ -48,15 +19,14 @@ function Services() {
         <div className="mt-5 text-center">
           <p className="mb-0">
             Looking for a custom job?{" "}
-            <Link
+            <a 
               className="colorpink pointer"
-              to="section-contact"
-              spy={true}
-              smooth={true}
-              duration={500}
+              target="_blank"
+              href="https://www.linkedin.com/in/lakmal98/overlay/contact-info/"
+              rel="noreferrer"
             >
               Click here
-            </Link>{" "}
+            </a>{" "}
             to contact me! 👋
           </p>
         </div>

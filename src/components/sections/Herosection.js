@@ -48,6 +48,11 @@ function Herosection(props) {
               </a>
             </li>
             <li className="list-inline-item">
+              <a href={socialMedia?.gitlab} target="_blank" rel="noreferrer">
+                <i className="fab fa-gitlab"></i>
+              </a>
+              </li>
+            <li className="list-inline-item">
               <a href={socialMedia?.github} target="_blank" rel="noreferrer">
                 <i className="fab fa-github"></i>
               </a>
@@ -57,6 +62,7 @@ function Herosection(props) {
                 <i className="fab fa-whatsapp"></i>
               </a>
             </li>
+            
           </ul>
 
           <div className="mt-4">

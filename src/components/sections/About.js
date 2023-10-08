@@ -11,6 +11,15 @@ const aboutContent = {
   content: description
 };
 
+const sortedProgressData = progressData.sort((a, b) => {
+  return b.percentage - a.percentage;
+});
+
+// sort counter data based on title (string)
+const sortedCounterData = counterData.sort((a, b) => {
+  return a.title.localeCompare(b.title);
+});
+
 
 function About() {
   return (
@@ -42,7 +51,7 @@ function About() {
                   ></div>
                 </div>
                 <div className="col-md-6">
-                  {progressData.map((progress) => (
+                  {sortedProgressData.map((progress) => (
                     <TrackVisibility
                       once
                       key={progress.id}
@@ -59,7 +68,7 @@ function About() {
         <div className="spacer" data-height="70"></div>
         <Pagetitle title="Tools & Technologies that I've worked with" />
         <div className="row fix-spacing">
-          {counterData.map((counter) => (
+          {sortedCounterData.map((counter) => (
             <div key={counter.id} className="col-md-3 col-sm-6">
               <TrackVisibility once>
                 <Counter counterItem={counter} />
