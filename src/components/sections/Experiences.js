@@ -1,8 +1,7 @@
 import React from "react";
 import Pagetitle from "../elements/Pagetitle";
 import Timeline from "../elements/Timeline";
-import { experienceData } from "../../content/content"
-
+import { experienceData } from "../../content/content";
 
 function Experiences() {
   return (
@@ -10,17 +9,16 @@ function Experiences() {
       <div className="container">
         <Pagetitle title="Experience" />
         <div className="row">
-
           <div className="col-md-12">
             <div className="spacer d-md-none d-lg-none" data-height="30"></div>
-            <div className="timeline exp bg-white rounded shadow-dark padding-30 overflow-hidden"
+            <div
+              className="timeline exp bg-white rounded shadow-dark padding-30 overflow-hidden"
               // reverse the order of the timeline
-              style={
-                {
-                  flexDirection: "column-reverse"
-                  , display: "flex"
-                }
-              }>
+              style={{
+                flexDirection: "column-reverse",
+                display: "flex",
+              }}
+            >
               {experienceData.map((experience) => (
                 <Timeline key={experience.id} education={experience} />
               ))}

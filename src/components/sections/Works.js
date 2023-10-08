@@ -150,7 +150,7 @@ function Works() {
       tempData = getAllItems.filter(
         (data) =>
           data.category === e.target.textContent.toLowerCase() &&
-          data.id <= dataVisibleCount
+          data.id <= dataVisibleCount,
       );
     }
     setVisibleItems(tempData);
@@ -169,8 +169,8 @@ function Works() {
       } else {
         setVisibleItems(
           getAllItems.filter(
-            (data) => data.category === activeFilter && data.id <= tempCount
-          )
+            (data) => data.category === activeFilter && data.id <= tempCount,
+          ),
         );
       }
     }

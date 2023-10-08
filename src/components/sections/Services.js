@@ -3,7 +3,6 @@ import Pagetitle from "../elements/Pagetitle";
 import Service from "../elements/Service";
 import { servicesData } from "../../content/content";
 
-
 function Services() {
   return (
     <section id="services">
@@ -19,7 +18,7 @@ function Services() {
         <div className="mt-5 text-center">
           <p className="mb-0">
             Looking for a custom job?{" "}
-            <a 
+            <a
               className="colorpink pointer"
               target="_blank"
               href="https://www.linkedin.com/in/lakmal98/overlay/contact-info/"

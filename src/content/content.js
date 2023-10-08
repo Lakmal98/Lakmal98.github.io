@@ -21,6 +21,7 @@ export const socialMedia = {
   github: "https://github.com/Lakmal98",
   gitlab: "https://gitlab.com/Lakmal98",
   whatsapp: "https://wa.me/94775277373",
+  email: "lakmalepp@gmail.com",
 };
 
 // About section
@@ -271,12 +272,13 @@ export const experienceData = [
 export const servicesData = [
   {
     id: 1,
-    title: "Consultaion",
+    title: "Consultation",
     content:
       "I provide consultation for a variety of topics, including software development, DevOps, and cloud computing for startups and small businesses.",
     contentColor: "light",
     icon: "https://cdn-icons-png.flaticon.com/512/1469/1469975.png",
     color: "#3F51B5",
+    link: `mailto:${socialMedia.email}?subject=Consultation Request&body=Hi Lakmal, I would like to request a consultation about...`,
   },
   {
     id: 2,
@@ -286,6 +288,7 @@ export const servicesData = [
       "I have experience in developing fullstack web applications using a variety of tools and technologies over the past 3 years.",
     contentColor: "light",
     color: "#009688",
+    link: "https://www.fiverr.com/lakmalepp",
   },
   {
     id: 3,
@@ -295,5 +298,6 @@ export const servicesData = [
       "I have experience in DevOps and CI/CD pipelines, including Jenkins, Docker, Kubernetes, and AWS.",
     contentColor: "light",
     color: "#4CAF50",
+    link: "https://www.fiverr.com/lakmalepp",
   },
 ];

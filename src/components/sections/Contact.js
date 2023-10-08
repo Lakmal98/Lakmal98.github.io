@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import Pagetitle from "../elements/Pagetitle";
+import { socialMedia } from "../../content/content";
 
 function Contact() {
   const [formdata, setFormdata] = useState({
@@ -71,14 +72,25 @@ function Contact() {
                 animateOnce={true}
               >
                 <p>
-                  Don't like forms? Send me an{" "}
-                  <a href="mailto:name@example.com">email</a>. 👋
+                  Send me an{" "}
+                  <a
+                    href={`mailto:${socialMedia.email}`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    email
+                  </a>
+                  . 👋
                 </p>
               </ScrollAnimation>
             </div>
           </div>
 
-          <div className="col-md-8">
+          <div
+            className="col-md-8"
+            // hide
+            style={{ display: "none" }}
+          >
             <form
               id="contact-form"
               className="contact-form mt-6"

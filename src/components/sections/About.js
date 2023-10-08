@@ -1,6 +1,13 @@
 import React from "react";
 import TrackVisibility from "react-on-screen";
-import { avatar, cv, description, name,progressData,counterData } from "../../content/content";
+import {
+  avatar,
+  cv,
+  description,
+  name,
+  progressData,
+  counterData,
+} from "../../content/content";
 import Counter from "../elements/Counter";
 import Pagetitle from "../elements/Pagetitle";
 import Skill from "../elements/Skill";
@@ -8,7 +15,7 @@ import Skill from "../elements/Skill";
 const aboutContent = {
   name: name,
   avatarImage: avatar,
-  content: description
+  content: description,
 };
 
 const sortedProgressData = progressData.sort((a, b) => {
@@ -20,7 +27,6 @@ const sortedCounterData = counterData.sort((a, b) => {
   return a.title.localeCompare(b.title);
 });
 
-
 function About() {
   return (
     <section id="about">
@@ -29,8 +35,11 @@ function About() {
         <div className="row">
           <div className="col-md-3">
             <div className="text-center text-md-left">
-              <img src={aboutContent.avatarImage} alt={aboutContent.name} 
-              style={{borderRadius:"50%"}}/>
+              <img
+                src={aboutContent.avatarImage}
+                alt={aboutContent.name}
+                style={{ borderRadius: "50%" }}
+              />
             </div>
             <div className="spacer d-md-none d-lg-none" data-height="30"></div>
           </div>
@@ -41,7 +50,13 @@ function About() {
                 <div className="col-md-6">
                   <p>{aboutContent.content}</p>
                   <div className="mt-3">
-                    <a href={cv} className="btn btn-default" target="_blank" rel="noreferrer">
+                    <a
+                      href={cv}
+                      className="btn btn-default"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ backgroundColor: "#6C6CE5" }}
+                    >
                       View/Download CV
                     </a>
                   </div>
