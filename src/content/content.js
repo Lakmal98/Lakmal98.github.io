@@ -30,40 +30,40 @@ export const progressData = [
     title: "Typescript",
     percentage: 85,
     progressColor: "darkblue",
-    starts: 2021
+    starts: 2021,
   },
   {
     id: 2,
     title: "Javascript",
     percentage: 90,
     progressColor: "red",
-    starts: 2019
+    starts: 2019,
   },
   {
     id: 3,
     title: "NodeJS",
     percentage: 86,
     progressColor: "green",
-    starts: 2020
+    starts: 2020,
   },
   {
     id: 4,
     title: "Python",
     percentage: 70,
-    starts: 2022
+    starts: 2022,
   },
 
   {
     id: 5,
     title: "Bash script",
     percentage: 70,
-    starts: 2022
+    starts: 2022,
   },
   {
     id: 6,
     title: "GO",
     percentage: 51,
-    starts: 2022
+    starts: 2022,
   },
   {
     id: 7,
@@ -84,8 +84,8 @@ export const progressData = [
     id: 10,
     title: "SQL",
     percentage: 60,
-    starts: 2022
-  }
+    starts: 2022,
+  },
 ];
 
 export const counterData = [
@@ -153,11 +153,12 @@ export const counterData = [
     id: 13,
     title: "JMeter",
     icon: "https://jmeter.apache.org/images/logo.svg",
-  }, {
+  },
+  {
     id: 14,
     title: "Jenkins",
     icon: "https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg",
-  }
+  },
 ];
 
 //   Experience section
@@ -260,7 +261,8 @@ export const experienceData = [
     id: 7,
     title: "Software Engineer",
     start: "Dec 2022",
-    content: "Guide the technical strategy, make key architectural decisions, and lead the development of robust microservices using technologies such as Gitlab, TypeScript, Firebase, Node.js, JavaScript, Google Cloud Platform (GCP), AWS, RabbitMQ, NestJS, and Docker.",
+    content:
+      "Guide the technical strategy, make key architectural decisions, and lead the development of robust microservices using technologies such as Gitlab, TypeScript, Firebase, Node.js, JavaScript, Google Cloud Platform (GCP), AWS, RabbitMQ, NestJS, and Docker.",
     company: "PromiseQ",
     company_link: "https://www.promiseq.com/",
   },
@@ -270,7 +272,8 @@ export const servicesData = [
   {
     id: 1,
     title: "Consultaion",
-    content: "I provide consultation for a variety of topics, including software development, DevOps, and cloud computing for startups and small businesses.",
+    content:
+      "I provide consultation for a variety of topics, including software development, DevOps, and cloud computing for startups and small businesses.",
     contentColor: "light",
     icon: "https://cdn-icons-png.flaticon.com/512/1469/1469975.png",
     color: "#3F51B5",
