@@ -1,8 +1,7 @@
 import React from "react";
 import { HashRouter, Switch, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
-import Bloglist from "./pages/Bloglist";
-import BlogDetails from "./pages/BlogDetails";
+import { NotFound } from "./pages/NotFound";
 import "./App.scss";
 
 function App() {
@@ -12,8 +11,9 @@ function App() {
         <Route path="/" exact>
           <Homepage />
         </Route>
-        <Route path="/blogs" component={Bloglist} exact />
-        <Route path="/blogs/blog-details/:id/:title" component={BlogDetails} />
+        {/* <Route path="/blogs" component={Bloglist} exact />
+        <Route path="/blogs/blog-details/:id/:title" component={BlogDetails} /> */}
+        <Route component={NotFound} />
       </Switch>
     </HashRouter>
   );

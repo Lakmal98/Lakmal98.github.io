@@ -28,9 +28,10 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
   };
   return (
     <>
-      <header className={handleMobileClasses()} 
-      // sticky="top"
-      style={{position: "fixed", top: 0, left: 0, right: 0, zIndex: 999}}
+      <header
+        className={handleMobileClasses()}
+        // sticky="top"
+        style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 999 }}
       >
         <div className="container">
           <div className="menu-icon d-inline-flex mr-4">
@@ -103,7 +104,7 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
             <li>
               <Link
                 activeClass="active"
-                to="section-works"
+                to="section-testimoninal"
                 spy={true}
                 smooth={true}
                 duration={0}
@@ -111,7 +112,7 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
                 <i className="icon-layers"></i>Works
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 activeClass="active"
                 to="section-blogs"
@@ -121,7 +122,7 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
               >
                 <i className="icon-note"></i>Blog
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 activeClass="active"

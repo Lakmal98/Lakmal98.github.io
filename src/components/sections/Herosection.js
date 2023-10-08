@@ -25,7 +25,12 @@ function Herosection(props) {
     >
       <div className="container">
         <div className="intro">
-          <img src={avatar} alt="avatar" className="mb-4" style={{borderRadius:"50%"}} />
+          <img
+            src={avatar}
+            alt="avatar"
+            className="mb-4"
+            style={{ borderRadius: "50%" }}
+          />
 
           <h1 className="mb-2 mt-0">{name}</h1>
           <p>
@@ -51,7 +56,7 @@ function Herosection(props) {
               <a href={socialMedia?.gitlab} target="_blank" rel="noreferrer">
                 <i className="fab fa-gitlab"></i>
               </a>
-              </li>
+            </li>
             <li className="list-inline-item">
               <a href={socialMedia?.github} target="_blank" rel="noreferrer">
                 <i className="fab fa-github"></i>
@@ -62,7 +67,6 @@ function Herosection(props) {
                 <i className="fab fa-whatsapp"></i>
               </a>
             </li>
-            
           </ul>
 
           <div className="mt-4">

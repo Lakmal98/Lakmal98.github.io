@@ -3,16 +3,13 @@ import ReactCursorPosition from "react-cursor-position";
 import { Element } from "react-scroll";
 import Header from "../components/layouts/Header";
 import About from "../components/sections/About";
-import Blogs from "../components/sections/Blogs";
 // import Brandlogos from "../components/sections/Brandlogos";
 import Contact from "../components/sections/Contact";
 import Experiences from "../components/sections/Experiences";
 import Educations from "../components/sections/Educations";
 import Herosection from "../components/sections/Herosection";
-import Pricing from "../components/sections/Pricing";
 import Services from "../components/sections/Services";
 import Testimonials from "../components/sections/Testimonials";
-import Works from "../components/sections/Works";
 import { logo } from "../content/content";
 
 function Homepage() {
@@ -54,21 +51,21 @@ function Homepage() {
         <Element name="section-educations">
           <Educations />
         </Element>
-        <Element name="section-works">
+        {/* <Element name="section-works">
           <Works />
-        </Element>
-        <Element name="section-pricing">
+        </Element> */}
+        {/* <Element name="section-pricing">
           <Pricing />
-        </Element>
+        </Element> */}
         <Element name="section-testimoninal">
           <Testimonials />
         </Element>
-        <Element name="section-brandlogos">
-          {/* <Brandlogos /> */}
-        </Element>
-        <Element name="section-blogs">
+        {/* <Element name="section-brandlogos">
+          <Brandlogos />
+        </Element> */}
+        {/* <Element name="section-blogs">
           <Blogs />
-        </Element>
+        </Element> */}
         <Element name="section-contact">
           <Contact />
         </Element>

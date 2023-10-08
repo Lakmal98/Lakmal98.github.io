@@ -4,12 +4,11 @@ export default function randomColor(dark = true, lightness = 155) {
   const rgb = hexToRgb(color);
   const brightness = Math.round(
     (parseInt(rgb.r) * 299 + parseInt(rgb.g) * 587 + parseInt(rgb.b) * 114) /
-      1000
+      1000,
   );
   if (dark) {
     return brightness < lightness ? color : randomColor();
-  } else 
-  {
+  } else {
     return brightness > lightness ? color : randomColor();
   }
 }

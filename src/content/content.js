@@ -21,6 +21,7 @@ export const socialMedia = {
   github: "https://github.com/Lakmal98",
   gitlab: "https://gitlab.com/Lakmal98",
   whatsapp: "https://wa.me/94775277373",
+  email: "lakmalepp@gmail.com",
 };
 
 // About section

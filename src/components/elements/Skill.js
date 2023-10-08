@@ -2,7 +2,7 @@ import React from "react";
 import randomColor from "../../utils/util";
 
 function Skill({ progress, isVisible }) {
-  const { title, percentage, progressColor,starts } = progress;
+  const { title, percentage, progressColor, starts } = progress;
   const winWidth = window.innerWidth;
   const progressQuery = () => {
     if (winWidth && winWidth > 767) {
@@ -33,12 +33,15 @@ function Skill({ progress, isVisible }) {
   return (
     <div className="skill-item">
       <div className="skill-info clearfix">
-        <h4 className="float-left mb-3 mt-0"
-        style={{float:"left"}}
-        >{title}</h4>
-        <span className="float-right"
-        style={{float:"right",fontSize:"12px",color:"gray"}}
-        >{starts ? new Date().getFullYear() - starts : 0} Years</span>
+        <h4 className="float-left mb-3 mt-0" style={{ float: "left" }}>
+          {title}
+        </h4>
+        <span
+          className="float-right"
+          style={{ float: "right", fontSize: "12px", color: "gray" }}
+        >
+          {starts ? new Date().getFullYear() - starts : 0} Years
+        </span>
       </div>
       <div className="progress">{progressQuery()}</div>
     </div>
