@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { name } from "../../content/content";
 import Logo from "../elements/Logo";
 
 function Header({ light, logoSource, toggleMenu, headerToggler }) {
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
+
+  // change theme color based on dark/light mode
+  if (theme === "dark") {
+    document.body.classList.add("dark");
+    localStorage.setItem("theme", "dark");
+  }
+
+  const toggleTheme = () => {
+    if (theme === "dark") {
+      document.body.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+      setTheme("light");
+    } else {
+      document.body.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+      setTheme("dark");
+    }
+  };
   const handleClasses = () => {
     let classes = "desktop-header-1 d-flex align-items-start flex-column";
     if (light & toggleMenu) {
@@ -149,6 +168,29 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
           <span className="copyright">
             {name} | {new Date().getFullYear()}
           </span>
+        </div>
+        {/* button to switch between dark and light themes */}
+        <div
+          className="btn"
+          onClick={(e) => {
+            toggleMenu && headerToggler(e);
+            toggleTheme();
+          }}
+          style={{
+            border: "none",
+            right: "1rem",
+            top: "1rem",
+            position: "absolute",
+          }}
+          title={
+            theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
+          }
+        >
+          {theme === "dark" ? (
+            <i className="fas fa-sun" style={{ color: "white" }}></i>
+          ) : (
+            <i className="fas fa-moon" style={{ color: "white" }}></i>
+          )}
         </div>
       </header>
     </>
