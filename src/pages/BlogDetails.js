@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Markdown from "markdown-to-jsx";
 import Disqus from "disqus-react";
-import Header from "../components/layouts/Header";
-import { logo } from "../content/content";
 
 function BlogDetails(props) {
   const [content, setContent] = useState("");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
   const blogId = props.match.params.id;
   const blogFile = props.match.params.title;
 
@@ -26,30 +25,62 @@ function BlogDetails(props) {
     title: blogFile,
   };
 
-  const [toggleMenu, setToggleMenu] = useState(false);
-
-  const headerToggler = (e) => {
-    e.preventDefault();
-    setToggleMenu(!toggleMenu);
+  const goBack = () => {
+    props.history.goBack();
   };
 
-  document.addEventListener("click", function (e) {
-    if (e.target.closest(".content")) {
-      setToggleMenu(false);
-    }
-  });
+  // change theme color based on dark/light mode
+  if (theme === "dark") {
+    document.body.classList.add("dark");
+    localStorage.setItem("theme", "dark");
+  }
 
-  // document.body.classList.add("dark");
-  //Uncomment the above line if you use dark version
+  const toggleTheme = () => {
+    if (theme === "dark") {
+      document.body.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+      setTheme("light");
+    } else {
+      document.body.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+      setTheme("dark");
+    }
+  };
 
   return (
     <>
-      <Header
-        logoSource={logo}
-        toggleMenu={toggleMenu}
-        headerToggler={headerToggler}
-      />
-      <main className={toggleMenu ? "content open" : "content"}>
+      <div className="btn-background">
+        <span className="btn btn-lg btn-rounded-circle" onClick={goBack}>
+          <i
+            className="icon-arrow-left"
+            style={theme === "dark" ? { color: "#f2f2f2" } : null}
+          >
+            {" "}
+            Go Back{" "}
+          </i>
+        </span>
+      </div>
+      {/* button to switch between dark and light themes */}
+      <div
+        className="btn"
+        onClick={toggleTheme}
+        style={{
+          border: "none",
+          right: "1rem",
+          top: "1rem",
+          position: "absolute",
+        }}
+        title={
+          theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
+        }
+      >
+        {theme === "dark" ? (
+          <i className="fas fa-sun" style={{ color: "white" }}></i>
+        ) : (
+          <i className="fas fa-moon"></i>
+        )}
+      </div>
+      <main>
         <div className="spacer" data-height="96"></div>
         <div className="blog-page-section">
           <div className="container">

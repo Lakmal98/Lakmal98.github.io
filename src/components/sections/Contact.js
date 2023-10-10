@@ -35,7 +35,7 @@ function Contact() {
       // open email client with pre-filled data
       window.open(
         `mailto:${socialMedia.email}?subject=${formdata.subject} | ${formdata.name}&body=Hi Lakmal,%0D%0A%0D%0A${formdata.message}`,
-        "_blank"
+        "_blank",
       );
     }
   };

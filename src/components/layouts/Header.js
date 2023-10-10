@@ -30,7 +30,6 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
     <>
       <header
         className={handleMobileClasses()}
-        // sticky="top"
         style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 999 }}
       >
         <div className="container">
@@ -53,6 +52,7 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
                 spy={true}
                 smooth={true}
                 duration={0}
+                onClick={toggleMenu && headerToggler}
               >
                 <i className="icon-home"></i>Home
               </Link>
@@ -64,6 +64,7 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
                 spy={true}
                 smooth={true}
                 duration={0}
+                onClick={toggleMenu && headerToggler}
               >
                 <i className="icon-user-following"></i>About
               </Link>
@@ -75,6 +76,7 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
                 spy={true}
                 smooth={true}
                 duration={0}
+                onClick={toggleMenu && headerToggler}
               >
                 <i className="icon-briefcase"></i>Services
               </Link>
@@ -86,6 +88,7 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
                 spy={true}
                 smooth={true}
                 duration={0}
+                onClick={toggleMenu && headerToggler}
               >
                 <i className="icon-screen-desktop"></i>Experience
               </Link>
@@ -97,6 +100,7 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
                 spy={true}
                 smooth={true}
                 duration={0}
+                onClick={toggleMenu && headerToggler}
               >
                 <i className="icon-graduation"></i>Education
               </Link>
@@ -108,6 +112,7 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
                 spy={true}
                 smooth={true}
                 duration={0}
+                onClick={toggleMenu && headerToggler}
               >
                 <i className="icon-layers"></i>Works
               </Link>
@@ -119,6 +124,8 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
                 spy={true}
                 smooth={true}
                 duration={0}
+                onClick={toggleMenu && headerToggler}
+
               >
                 <i className="icon-note"></i>Blog
               </Link>
@@ -130,6 +137,7 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
                 spy={true}
                 smooth={true}
                 duration={0}
+                onClick={toggleMenu && headerToggler}
               >
                 <i className="icon-bubbles"></i>Contact
               </Link>
