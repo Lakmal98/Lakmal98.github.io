@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5d09aecf.css",
-    "main.js": "/static/js/main.86c1d0ad.js",
+    "main.css": "/static/css/main.32cbe36b.css",
+    "main.js": "/static/js/main.d4515e30.js",
     "static/js/821.d59a879a.chunk.js": "/static/js/821.d59a879a.chunk.js",
     "static/js/643.d152a341.chunk.js": "/static/js/643.d152a341.chunk.js",
     "static/js/27.1e54fade.chunk.js": "/static/js/27.1e54fade.chunk.js",
@@ -17,11 +17,11 @@
     "static/media/common-misconceptions-about-payment.md": "/static/media/common-misconceptions-about-payment.e5b2c5dcae10956af81d.md",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.5d09aecf.css.map": "/static/css/main.5d09aecf.css.map",
-    "main.86c1d0ad.js.map": "/static/js/main.86c1d0ad.js.map"
+    "main.32cbe36b.css.map": "/static/css/main.32cbe36b.css.map",
+    "main.d4515e30.js.map": "/static/js/main.d4515e30.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d09aecf.css",
-    "static/js/main.86c1d0ad.js"
+    "static/css/main.32cbe36b.css",
+    "static/js/main.d4515e30.js"
   ]
 }
