@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import Pagetitle from "../elements/Pagetitle";
 import { socialMedia } from "../../content/content";
+import Social from "../elements/Social";
 
 function Contact() {
   const [formdata, setFormdata] = useState({
@@ -30,7 +31,12 @@ function Contact() {
       setMessage("Message is required");
     } else {
       setError(false);
-      setMessage("You message has been sent!!!");
+      setMessage("Please continue on your email client...");
+      // open email client with pre-filled data
+      window.open(
+        `mailto:${socialMedia.email}?subject=${formdata.subject} | ${formdata.name}&body=Hi Lakmal,%0D%0A%0D%0A${formdata.message}`,
+        "_blank"
+      );
     }
   };
 
@@ -64,7 +70,7 @@ function Contact() {
                 animateOut="fadeInOut"
                 animateOnce={true}
               >
-                <h3>Let's talk about everything!</h3>
+                <h3>Not a fan of forms?</h3>
               </ScrollAnimation>
               <ScrollAnimation
                 animateIn="fadeInUp"
@@ -74,7 +80,7 @@ function Contact() {
                 <p>
                   Send me an{" "}
                   <a
-                    href={`mailto:${socialMedia.email}`}
+                    href={`mailto:${socialMedia.email}?subject=Can we talk?&body=Hi Lakmal, Can we talk?`}
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -83,14 +89,11 @@ function Contact() {
                   . 👋
                 </p>
               </ScrollAnimation>
+              <Social />
             </div>
           </div>
 
-          <div
-            className="col-md-8"
-            // hide
-            style={{ display: "none" }}
-          >
+          <div className="col-md-8">
             <form
               id="contact-form"
               className="contact-form mt-6"
@@ -159,6 +162,7 @@ function Contact() {
                 id="submit"
                 value="Submit"
                 className="btn btn-default"
+                style={{ backgroundColor: "#FF4C60" }}
               >
                 Send Message
               </button>
