@@ -1,8 +1,6 @@
 // Hero section
-export const logo =
-  "https://gitlab.com/uploads/-/system/user/avatar/5089295/avatar.png";
-export const avatar =
-  "https://gitlab.com/uploads/-/system/user/avatar/5089295/avatar.png";
+export const logo = "https://avatars.githubusercontent.com/u/39994919?v=4";
+export const avatar = "https://avatars.githubusercontent.com/u/39994919?v=4";
 export const name = "Dimuthu Lakmal";
 export const roles = [
   "Software Engineer",
@@ -168,6 +166,7 @@ export const educationData = [
   {
     id: 1,
     title: "Ordinary Level",
+    globalTerm: "Elementary & Secondary School",
     company: "A/Sri Siddhartha Central College",
     start: "Feb 2003",
     end: "Dec 2014",
@@ -177,6 +176,7 @@ export const educationData = [
   {
     id: 2,
     title: "Advanced Level",
+    globalTerm: "High School",
     start: "May 2015",
     end: "Aug 2017",
     content:
@@ -187,6 +187,7 @@ export const educationData = [
   {
     id: 3,
     title: "Bachelor of Science in Information Systems",
+    globalTerm: "University Degree",
     years: "2019 - 2022",
     start: "Jan 2019",
     end: "May 2022",
@@ -292,7 +293,7 @@ export const servicesData = [
   },
   {
     id: 3,
-    icon: "https://cdn-icons-png.flaticon.com/512/5266/5266541.png",
+    icon: "https://png.pngtree.com/png-vector/20220725/ourmid/pngtree-devops-developers-characters-devop-developer-png-image_6066230.png",
     title: "DevOps",
     content:
       "I have experience in DevOps and CI/CD pipelines, including Jenkins, Docker, Kubernetes, and AWS.",

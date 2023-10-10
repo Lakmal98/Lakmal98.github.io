@@ -30,6 +30,7 @@ function Herosection(props) {
             alt="avatar"
             className="mb-4"
             style={{ borderRadius: "50%" }}
+            width={200}
           />
 
           <h1 className="mb-2 mt-0">{name}</h1>
