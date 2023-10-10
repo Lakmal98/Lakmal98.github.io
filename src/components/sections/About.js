@@ -39,6 +39,7 @@ function About() {
                 src={aboutContent.avatarImage}
                 alt={aboutContent.name}
                 style={{ borderRadius: "50%" }}
+                width={200}
               />
             </div>
             <div className="spacer d-md-none d-lg-none" data-height="30"></div>
@@ -84,7 +85,7 @@ function About() {
         <Pagetitle title="Tools & Technologies that I've worked with" />
         <div className="row fix-spacing">
           {sortedCounterData.map((counter) => (
-            <div key={counter.id} className="col-md-3 col-sm-6">
+            <div key={counter.id} className="col-md-2 col-sm-6 col-6">
               <TrackVisibility once>
                 <Counter counterItem={counter} />
               </TrackVisibility>

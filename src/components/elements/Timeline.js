@@ -1,8 +1,15 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
+import { useState } from "react";
 
 function Timeline({ education }) {
-  let { start, end, title, content } = education;
+  const [expanded, setExpanded] = useState(false);
+
+  const handleSeeMore = () => {
+    setExpanded(!expanded);
+  };
+
+  let { start, end, title, content, globalTerm } = education;
 
   // start/end format: Jan 2010
   // calculate the years and months between start and end dates
@@ -40,12 +47,30 @@ function Timeline({ education }) {
       <div className="timeline-container">
         <div className="content">
           <span className="time">{experience}</span>
-          <h3 className="title">{title}</h3>
-          <p>
-            {content.length > 2000
-              ? content.substring(0, 2000) + "..."
-              : content}
-          </p>
+
+          <h3 className="title">
+            {title}{" "}
+            {globalTerm ? (
+              <span style={{ fontWeight: "normal", color: "gray" }}>
+                {" "}
+                ({globalTerm})
+              </span>
+            ) : null}{" "}
+          </h3>
+          {!expanded ? (
+            <p>
+              {content.length > 300
+                ? content.substring(0, 300) + "..."
+                : content}
+              {!expanded && content.length > 300 && (
+                <span onClick={handleSeeMore} className="see-more">
+                  See more
+                </span>
+              )}
+            </p>
+          ) : (
+            content
+          )}
         </div>
       </div>
     </ScrollAnimation>
