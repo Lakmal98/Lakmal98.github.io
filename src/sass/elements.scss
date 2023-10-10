@@ -502,3 +502,14 @@
           opacity: 0.75;
       }
   }
+
+  a {
+    text-decoration: none;
+  }
+
+  .is-active > a {
+    background-color: $colorpink;
+    font-weight: bolder;
+    color: #F1F1F1;
+
+  }

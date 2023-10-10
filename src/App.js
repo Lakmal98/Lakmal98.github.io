@@ -13,11 +13,9 @@ function App() {
         <Route path="/" exact>
           <Homepage />
         </Route>
-        {/* <Route path="/blogs" component={Bloglist} exact />
-        <Route path="/blogs/blog-details/:id/:title" component={BlogDetails} /> */}
-        <Route component={NotFound} />
         <Route path="/blogs" component={Bloglist} exact />
         <Route path="/blogs/blog-details/:id/:title" component={BlogDetails} />
+        <Route component={NotFound} />
       </Switch>
     </HashRouter>
   );

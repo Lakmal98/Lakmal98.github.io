@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Header from "../components/layouts/Header";
 import Blog from "../components/elements/Blog";
 import Pagination from "../components/elements/Pagination";
-import { logo } from "../content/content";
 
 const allBlogs = [
   {
@@ -104,6 +102,7 @@ function Bloglist() {
   const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(6);
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
 
   useEffect(() => {
     setPosts(allBlogs);
@@ -118,27 +117,58 @@ function Bloglist() {
     setCurrentPage(pageNumber);
   };
 
-  const [toggleMenu, setToggleMenu] = useState(false);
+  // change theme color based on dark/light mode
+  if (theme === "dark") {
+    document.body.classList.add("dark");
+    localStorage.setItem("theme", "dark");
+  }
 
-  const headerToggler = (e) => {
-    e.preventDefault();
-    setToggleMenu(!toggleMenu);
-  };
-
-  document.addEventListener("click", function (e) {
-    if (e.target.closest(".content")) {
-      setToggleMenu(false);
+  const toggleTheme = () => {
+    if (theme === "dark") {
+      document.body.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+      setTheme("light");
+    } else {
+      document.body.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+      setTheme("dark");
     }
-  });
+  };
 
   return (
     <>
-      <Header
-        logoSource={logo}
-        toggleMenu={toggleMenu}
-        headerToggler={headerToggler}
-      />
-      <main className={toggleMenu ? "content open" : "content"}>
+      <main>
+        <div className="btn-background">
+          <a href="/" className="btn btn-lg btn-rounded-circle">
+            <i
+              className="icon-arrow-left"
+              style={theme === "dark" ? { color: "#f2f2f2" } : null}
+            >
+              {" "}
+              Home{" "}
+            </i>
+          </a>
+        </div>
+        {/* button to switch between dark and light themes */}
+        <div
+          className="btn"
+          onClick={toggleTheme}
+          style={{
+            border: "none",
+            right: "1rem",
+            top: "1rem",
+            position: "absolute",
+          }}
+          title={
+            theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
+          }
+        >
+          {theme === "dark" ? (
+            <i className="fas fa-sun" style={{ color: "white" }}></i>
+          ) : (
+            <i className="fas fa-moon"></i>
+          )}
+        </div>
         <div className="spacer" data-height="96"></div>
         <div className="blog-page-section">
           <div className="container">
