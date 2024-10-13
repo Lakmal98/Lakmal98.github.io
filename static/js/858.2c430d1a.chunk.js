@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkLakmal=self.webpackChunkLakmal||[]).push([[858],{6858:(a,e,b)=>{a.exports=b.p+"static/media/best-app-development-tool.ad3bbdcbdc7fcfbfbab6.md"}}]);

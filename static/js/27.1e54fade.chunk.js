@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkLakmal=self.webpackChunkLakmal||[]).push([[27],{9027:function(s,t,a){s.exports=a.p+"static/media/things-to-know-about-startup-business.3df71b0b7f432368182f.md"}}]);

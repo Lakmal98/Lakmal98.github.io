@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkLakmal=self.webpackChunkLakmal||[]).push([[750],{3750:(a,e,c)=>{a.exports=c.p+"static/media/common-misconceptions-about-payment.e5b2c5dcae10956af81d.md"}}]);
