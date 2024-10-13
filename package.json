@@ -10,6 +10,7 @@
     "animate.css": "4.1.1",
     "axios": "^0.21.1",
     "bootstrap": "^5.0.2",
+    "caniuse-lite": "^1.0.30001668",
     "disqus-react": "^1.1.0",
     "fslightbox-react": "^1.6.2",
     "markdown-to-jsx": "^7.1.3",
